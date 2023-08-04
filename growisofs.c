@@ -426,7 +426,9 @@
 #elif defined(_WIN32)
 # undef  _WIN32_WINNT
 # define _WIN32_WINNT	0x0500
+/* this made it complain about "long long long"
 # define off64_t	__int64
+*/
 # define stat64		_stati64
 # define fstat64	_fstati64
 # define lseek64	_lseeki64
